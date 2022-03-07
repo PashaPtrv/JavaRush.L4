@@ -2,25 +2,25 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Вывести на экран квадрат из 10х10 букв S используя цикл while.
-    //Буквы в каждой строке не разделять.
+    //Вывести на экран таблицу умножения 10х10 используя цикл while.
+    //Числа разделить пробелом.
 
     public static void main(String[] args) {
-
-        int a = 0;
-        int b = 0;
-        while (a < 10){
-            a++;
-            while (b < 10){
+        int a = 1;
+        int b = 1;
+        while (a <= 10) {
+            while (b <= 10) {
+                System.out.print(a * b + " ");
                 b++;
-                System.out.print("S");
             }
+            a++;
+            b = 1;
             System.out.println();
-            b = 0;
         }
-
     }
 }
+
+
 
 
 
