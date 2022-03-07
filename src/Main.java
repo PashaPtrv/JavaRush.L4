@@ -2,19 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Ввести с клавиатуры строку и число N.
-    //Вывести на экран строку N раз, используя цикл while.
+    //Вывести на экран квадрат из 10х10 букв S используя цикл while.
+    //Буквы в каждой строке не разделять.
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите строку:");
-        String str = scanner.nextLine();
-        System.out.println("Введите количество выводов:");
-        int count = scanner.nextInt();
-        int num = 1;
-        while (num <= count){
-            System.out.println(str);
-            num++;
+
+        int a = 0;
+        int b = 0;
+        while (a < 10){
+            a++;
+            while (b < 10){
+                b++;
+                System.out.print("S");
+            }
+            System.out.println();
+            b = 0;
         }
 
     }
