@@ -2,21 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Ввести с клавиатуры три числа, и вывести их в порядке убывания.
+    /* Ввести с клавиатуры два имени, и если имена одинаковые, вывести сообщение «Имена идентичны».
+    Если имена разные, но их длины равны – вывести сообщение – «Длины имен равны». */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
-        if (num1 >= num2 && num1 >= num3 && num2 >= num3) System.out.println(num1 + " " + num2 + " " + num3);
-        else if (num1 >= num2 && num1 >= num3 && num3 >= num2) System.out.println(num1 + " " + num3 + " " + num2);
-        else if (num2 >= num1 && num1 >= num3 && num2 >= num3) System.out.println(num2 + " " + num1 + " " + num3);
-        else if (num2 >= num1 && num3 >= num1 && num2 >= num3) System.out.println(num2 + " " + num3 + " " + num1);
-        else if (num2 >= num1 && num3 >= num1 && num3 >= num2) System.out.println(num3 + " " + num2 + " " + num1);
-        else if (num1 >= num2 && num3 >= num1 && num3 >= num2) System.out.println(num3 + " " + num1 + " " + num2);
+        String name1 = scanner.nextLine();
+        String name2 = scanner.nextLine();
+        if (name1.equals(name2)) {
+            System.out.println("Имена идентичны");
+        } else if (name1.length() == name2.length()){
+            System.out.println("Длинны имен равны");
+        } else System.out.println("Имена разные");
     }
-
 }
+
+
 
 
 
