@@ -2,12 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Используя цикл вывести на экран сто раз надпись:
-    //«Я никогда не буду работать за копейки. Амиго»
+    //Ввести с клавиатуры три числа, вывести на экран среднее из них, т.е. не самое большое и не самое маленькое.
     public static void main(String[] args) {
-        for (int i = 0; i < 100; i++){
-            System.out.println("Я никогда не буду работать за копейки. Амиго");
-        }
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        if (a >= b && a <= c || a <= b && a >= c)
+            System.out.println(a);
+        else
+        if (b >= a && b <= c || b <= a && b >= c)
+            System.out.println(b);
+        else
+            System.out.println(c);
+
     }
 }
 
