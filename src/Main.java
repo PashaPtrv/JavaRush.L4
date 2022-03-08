@@ -2,20 +2,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Вывести на экран таблицу умножения 10х10 используя цикл while.
-    //Числа разделить пробелом.
+    //Используя цикл for вывести на экран чётные числа от 1 до 100 включительно.
+    //Через пробел либо с новой строки.
 
     public static void main(String[] args) {
-        int a = 1;
-        int b = 1;
-        while (a <= 10) {
-            while (b <= 10) {
-                System.out.print(a * b + " ");
-                b++;
-            }
-            a++;
-            b = 1;
-            System.out.println();
+        for (int i = 2; i <= 100; i += 2 ){
+            System.out.println(i);
         }
     }
 }
