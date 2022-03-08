@@ -2,15 +2,22 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Используя цикл for вывести на экран чётные числа от 1 до 100 включительно.
-    //Через пробел либо с новой строки.
+    //Ввести с клавиатуры два числа m и n.
+    //Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
 
     public static void main(String[] args) {
-        for (int i = 2; i <= 100; i += 2 ){
-            System.out.println(i);
+        Scanner scanner = new Scanner(System.in);
+        int m = scanner.nextInt();
+        int n = scanner.nextInt();
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(8);
+            }
+            System.out.println();
         }
     }
 }
+
 
 
 
