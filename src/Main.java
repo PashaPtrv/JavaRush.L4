@@ -2,21 +2,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Ввести с клавиатуры три числа, вывести на экран среднее из них, т.е. не самое большое и не самое маленькое.
+    //Вводить с клавиатуры числа и считать их сумму.
+    // Если пользователь ввел -1, вывести на экран сумму и завершить программу. -1 должно учитываться в сумме.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int sum = 0;
         int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-
-        if (a >= b && a <= c || a <= b && a >= c)
-            System.out.println(a);
-        else
-        if (b >= a && b <= c || b <= a && b >= c)
-            System.out.println(b);
-        else
-            System.out.println(c);
-
+        while (a != -1){
+            sum += a;
+            a = scanner.nextInt();
+        }
+        System.out.println(sum - 1);
     }
 }
 
