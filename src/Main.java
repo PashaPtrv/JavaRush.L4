@@ -2,13 +2,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Ввести с клавиатуры имя и, используя цикл for 10 раз, вывести: [*имя* любит меня.]
+    //Используя цикл вывести на экран сто раз надпись:
+    //«Я никогда не буду работать за копейки. Амиго»
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите имя: ");
-        String name = scanner.nextLine();
-        for (int i = 0; i < 10; i++){
-            System.out.println(name + " любит меня");
+        for (int i = 0; i < 100; i++){
+            System.out.println("Я никогда не буду работать за копейки. Амиго");
         }
     }
 }
