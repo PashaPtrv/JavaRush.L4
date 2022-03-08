@@ -2,17 +2,21 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Вводить с клавиатуры числа и считать их сумму.
-    // Если пользователь ввел -1, вывести на экран сумму и завершить программу. -1 должно учитываться в сумме.
+    /*Ввести с клавиатуры строку name.
+        Ввести с клавиатуры дату рождения (три числа): y, m, d.
+        Вывести на экран текст:
+        «Меня зовут name
+        Я родился d.m.y»*/
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum = 0;
-        int a = scanner.nextInt();
-        while (a != -1){
-            sum += a;
-            a = scanner.nextInt();
-        }
-        System.out.println(sum - 1);
+        System.out.println("Введите имя: ");
+        String name = scanner.nextLine();
+        System.out.println("Введите дату рождения год/месяц/день ");
+        int y = scanner.nextInt();
+        int m = scanner.nextInt();
+        int d = scanner.nextInt();
+        System.out.println("Меня зовут " + name);
+        System.out.println("Я родился " + d + "." + m + "." + y);
     }
 }
 
